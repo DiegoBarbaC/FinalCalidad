@@ -55,8 +55,8 @@ jobs:
           command: |
             git pull origin circleci-project-setup
             git config credential.helper 'cache --timeout=120'
-            git config user.name "Fernando162021"
-            git config user.email "fernandoquinteromps@outlook.com"
+            git config user.name "DiegoBarbaC"
+            git config user.email "diego.barba011010@gmail.com"
 
       - run:
           name: Clean screenshots and create directory
@@ -82,7 +82,7 @@ jobs:
             if [ -d "src/test/resources/screenshots" ]; then
               git add src/test/resources/screenshots
               git commit -m "Test screenshots [skip ci]" || echo "No changes to commit"
-              git push -q https://Fernando162021:$GH_TOKEN@github.com/Fernando162021/FernandoQuinteroUnittest.git $CIRCLE_BRANCH
+              git push -q https://DiegoBarbaC:$GH_TOKEN@github.com/DiegoBarbaC/FinalCalidad.git $CIRCLE_BRANCH
             else
               echo "No screenshots"
             fi
