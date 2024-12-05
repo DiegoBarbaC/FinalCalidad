@@ -3,6 +3,7 @@ package com.mayab.quality.unittest.dao;
 import java.util.List;
 
 
+
 import com.mayab.quality.unittest.model.User;
 
 public interface IDAOUser {
